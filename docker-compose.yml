@@ -1,0 +1,12 @@
+version: "3"
+services:
+  product-db:
+    image: postgres:latest
+    container_name: ifoode
+    restart: always
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=123456
+      - POSTGRES_DB=ifoode
+    ports:
+      - "6969:5432"
